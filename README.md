@@ -2,7 +2,7 @@
 
 A demo that builds on **Section 7: Continuous Integration and Deployment with AWS**, from Stephen Grider's _Docker and Kubernetes: The Complete Guide_.
 
-## Objectives include
+## Objectives
 
 1. Using [Vite](https://vite.dev/) to build a simple Vue frontend with tests.
 2. Setup a git develop branch along with the main branch.
@@ -14,5 +14,5 @@ A demo that builds on **Section 7: Continuous Integration and Deployment with AW
 4. Setting up a docker compose file, using both of the dev and testing containers built earlier for local development.
    - Setting up a testing container using the same image for development with an overriding command.
 5. Using [GitHub Actions](https://docs.github.com/en/actions), run unit tests when new code is pushed to the repository
-6. Setting up a production container via multi-step builds using Nginx server
-7. Extending GitHub actions for testing and deployment to AWS Elastic Beanstalk
+6. Setting up a production container via multi-stage builds using Nginx server
+7. Extending GitHub actions for deployment to AWS Elastic Beanstalk
