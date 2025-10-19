@@ -1,0 +1,14 @@
+name: Frontend Unit Tests
+run-name: Run frontend unit tests on ${{ github.ref }}
+on: [push]
+jobs:
+  Frontend-Unit-Tests:
+    runs-on: ubuntu-latest
+    container: node:22-alpine3.22
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Install dependencies
+        run: npm install
+      - name: Run unit tests
+        run: npm run test
