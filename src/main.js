@@ -3,12 +3,12 @@ import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
-    <h1>Hello My Website!</h1>
+    <h1>Welcome to my website!</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
     <p>
-      Exciting things are coming soon!
+      Exciting things are here!
     </p>
   </div>
 `;

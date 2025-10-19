@@ -1,0 +1,22 @@
+services:
+  dev:
+    image: sfdeloach/my-website-dev:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - /app/node_modules
+      - .:/app
+
+  test:
+    image: sfdeloach/my-website-test:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    # override the default command to run tests
+    command: ["npm", "run", "test"]
