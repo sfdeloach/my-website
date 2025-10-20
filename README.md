@@ -16,3 +16,4 @@ A demo that builds on **Section 7: Continuous Integration and Deployment with AW
 5. Using [GitHub Actions](https://docs.github.com/en/actions), run unit tests when new code is pushed to the repository
 6. Setting up a production container via multi-stage builds using Nginx server
 7. Extending GitHub actions for deployment to AWS Elastic Beanstalk
+   - see https://github.com/einaregilsson/beanstalk-deploy
